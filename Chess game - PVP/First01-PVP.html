@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chess</title>
+    <link rel="stylesheet" href="css/chessboard-1.0.0.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/chessboard-1.0.0.min.js"></script>
+    <script src="chess.js"></script>
+    <link rel="stylesheet" href="First01CSS.css">
+  </head>
+  <body>
+
+    <div id="myBoard" style="width: 400px"></div>
+    <label>Status:</label>
+    <div id="status"></div>
+    <label>FEN:</label>
+    <div id="fen"></div>
+
+    <div class="row my-3 text-align-center">
+      <div class="col-md-12">
+          <h2>Advantage</h2>
+          <p><span id="advantageColor">Neither side</span> has the advantage 
+              (+<span id="advantageNumber">0</span>).</p>
+          <div class="progress">
+              <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" 
+                  role="progressbar" aria-valuenow="0" style="width: 50%"
+                  aria-valuemin="-2000" aria-valuemax="4000" id='advantageBar'>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  
+    <label>PGN:</label>
+    <div class="info">
+      <div id="move-history" class="move-history">
+      </div>
+  </div>
+
+  <script type="text/javascript" src="First01JS.js"></script>
+</body>
+</html>
